@@ -1,21 +1,17 @@
 // ─── Constants & Helpers ────────────────────────────────────────────────────
 
-const DEGREE_COLORS = [
-  '#e05c6e', // 1 – root
-  '#e0804a', // 2
-  '#d4a843', // 3
-  '#7fc45c', // 4
-  '#4cb8a8', // 5
-  '#5a9fe0', // 6
-  '#9a70e0', // 7
-  '#c96ac0', // 8 – octave
-];
+// Semitone-based numbering: number N = semitone (N-1) above root
+// 1=Root, 2=♭2, 3=2nd, 4=♭3, 5=3rd, 6=4th, 7=♭5, 8=5th, 9=♭6, 10=6th, 11=♭7, 12=7th, 13=Oct
+const DEGREE_NAMES = {
+  1: 'Root', 2: '♭2', 3: '2nd', 4: '♭3',  5: '3rd',
+  6: '4th',  7: '♭5', 8: '5th', 9: '♭6',  10: '6th',
+  11: '♭7', 12: '7th', 13: 'Oct', 14: '♭9', 15: '9th',
+};
 
-const DEGREE_NAMES = ['', '1 (Root)', '2nd', '3rd', '4th', '5th', '6th', '7th', '8 (Oct)'];
-const NOTE_NAMES_MAJOR = ['', 'C', 'D', 'E', 'F', 'G', 'A', 'B'];
-
+// Evenly-spaced hues around the chromatic color wheel (12 semitones)
 function degreeColor(deg) {
-  return DEGREE_COLORS[((deg - 1) % 8 + 8) % 8];
+  const hue = Math.round(((deg - 1) % 12) / 12 * 360);
+  return `hsl(${hue}, 70%, 60%)`;
 }
 
 // ─── Storage ────────────────────────────────────────────────────────────────
@@ -234,8 +230,8 @@ function buildGraph() {
 }
 
 function mapDegreeToY(deg, h) {
-  // Map degree 1–8 to -h/2 .. +h/2 (8=top, 1=bottom)
-  return ((deg - 1) / 7) * h - h / 2;
+  // Map degree 1–13 to -h/2 .. +h/2 (13=top, 1=bottom)
+  return ((deg - 1) / 12) * h - h / 2;
 }
 
 function tick() {
@@ -427,7 +423,7 @@ function showDetailPanel(d, connected, depth) {
     const s = standards.find(x => x.id === id);
     if (!s) return;
     const degreeDots = s.scale_degrees.slice(0, shared).map(deg =>
-      `<span style="color:${degreeColor(deg)};font-weight:600">${DEGREE_NAMES[deg] || deg}</span>`
+      `<span style="color:${degreeColor(deg)};font-weight:600">${DEGREE_NAMES[deg] ?? deg}</span>`
     ).join(', ');
     const item = document.createElement('div');
     item.className = 'connection-item';
@@ -454,27 +450,28 @@ function renderDetailMelody(d) {
 
   let html = `<svg viewBox="0 0 ${W} ${H}" style="overflow:visible">`;
 
-  // Draw guide lines for each degree
-  for (let deg = 1; deg <= 8; deg++) {
-    const y = H - 8 - ((deg - 1) / 7) * (H - 16);
-    html += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>`;
+  // Draw guide lines for key chromatic positions (Root, 3rd, 5th, Oct)
+  for (const deg of [1, 5, 8, 13]) {
+    const y = H - 8 - ((deg - 1) / 12) * (H - 16);
+    html += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>`;
+    html += `<text x="0" y="${y - 2}" font-size="7" fill="rgba(255,255,255,0.2)">${DEGREE_NAMES[deg]}</text>`;
   }
 
   // Lines between notes
   for (let i = 0; i < n - 1; i++) {
     const x1 = x0 + i * spacing;
-    const y1 = H - 8 - ((degs[i] - 1) / 7) * (H - 16);
+    const y1 = H - 8 - ((degs[i] - 1) / 12) * (H - 16);
     const x2 = x0 + (i + 1) * spacing;
-    const y2 = H - 8 - ((degs[i + 1] - 1) / 7) * (H - 16);
+    const y2 = H - 8 - ((degs[i + 1] - 1) / 12) * (H - 16);
     html += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${degreeColor(degs[i])}" stroke-width="1.5" opacity="0.4"/>`;
   }
 
   // Dots + labels
   for (let i = 0; i < n; i++) {
     const x = x0 + i * spacing;
-    const y = H - 8 - ((degs[i] - 1) / 7) * (H - 16);
+    const y = H - 8 - ((degs[i] - 1) / 12) * (H - 16);
     html += `<circle cx="${x}" cy="${y}" r="5" fill="${degreeColor(degs[i])}" opacity="0.9"/>`;
-    html += `<text x="${x}" y="${y + 14}" text-anchor="middle" font-size="8" fill="${degreeColor(degs[i])}" opacity="0.8">${degs[i]}</text>`;
+    html += `<text x="${x}" y="${y + 14}" text-anchor="middle" font-size="8" fill="${degreeColor(degs[i])}" opacity="0.8">${DEGREE_NAMES[degs[i]] ?? degs[i]}</text>`;
   }
 
   html += '</svg>';
@@ -540,12 +537,12 @@ function addLegend() {
     legend.id = 'degree-legend';
     document.getElementById('app').appendChild(legend);
   }
-  legend.innerHTML = '<span style="margin-right:4px">Scale degree:</span>';
-  for (let i = 1; i <= 8; i++) {
+  legend.innerHTML = '<span style="margin-right:6px;white-space:nowrap">Interval:</span>';
+  for (let i = 1; i <= 13; i++) {
     legend.innerHTML += `
-      <span style="display:flex;align-items:center;gap:4px;margin-right:8px">
+      <span style="display:flex;align-items:center;gap:3px;margin-right:10px;white-space:nowrap">
         <span class="legend-dot" style="background:${degreeColor(i)}"></span>
-        <span>${i === 8 ? '8 (Oct)' : i}</span>
+        <span>${DEGREE_NAMES[i]}</span>
       </span>
     `;
   }
@@ -561,22 +558,10 @@ const KEY_TO_MIDI_ROOT = {
   'Am': 69, 'Bm': 71, 'C#m': 61, 'Ebm': 63, 'F#m': 66,
 };
 
-// Major scale intervals (semitones from root)
-const MAJOR_INTERVALS = [0, 2, 4, 5, 7, 9, 11];
-// Natural minor
-const MINOR_INTERVALS = [0, 2, 3, 5, 7, 8, 10];
-
-function isMinorKey(key) {
-  return key.endsWith('m') && key.length > 1;
-}
-
 function degreeToMidi(deg, key) {
-  const root = KEY_TO_MIDI_ROOT[key] || 60;
-  const minor = isMinorKey(key);
-  const intervals = minor ? MINOR_INTERVALS : MAJOR_INTERVALS;
-  const octave = deg === 8 ? 1 : 0;
-  const scaleDeg = deg === 8 ? 1 : deg;
-  return root + intervals[scaleDeg - 1] + octave * 12;
+  // degree N = semitone (N-1) above root, played in mid-register
+  const root = (KEY_TO_MIDI_ROOT[key] || 60) + 12; // C5 range
+  return root + (deg - 1);
 }
 
 function midiToToneNote(midi) {
