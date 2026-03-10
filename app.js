@@ -73,6 +73,7 @@ let selectedNode = null;
 let scrubDepth = 0; // 0 = no scrub active
 let playingIds = new Set();
 let synth = null;
+let editingId = null;
 
 // D3 references
 let simulation, svgEl, gMain, nodeGroups, edgePaths, width, height;
@@ -401,7 +402,7 @@ function showDetailPanel(d, connected, depth) {
     `${d.composer || '?'} · Key: ${d.key} · ${d.time_signature} · ♩=${d.tempo}`;
 
   // Large melody display
-  renderDetailMelody(d);
+  renderMelody(d, document.getElementById('detail-melody'));
 
   // Connections list
   const connDiv = document.getElementById('detail-connections');
@@ -440,8 +441,7 @@ function showDetailPanel(d, connected, depth) {
   });
 }
 
-function renderDetailMelody(d) {
-  const container = document.getElementById('detail-melody');
+function renderMelody(d, container) {
   const W = 272, H = 60;
   const degs = d.scale_degrees;
   const n = degs.length;
@@ -509,6 +509,14 @@ function setupControls() {
   });
 
   document.getElementById('editor-form').addEventListener('submit', onEditorSubmit);
+
+  ['title', 'composer', 'key', 'time_signature', 'tempo', 'scale_degrees', 'durations'].forEach(name => {
+    document.querySelector(`#editor-form [name="${name}"]`).addEventListener('input', updateEditorPreview);
+  });
+
+  document.getElementById('preview-play-btn').addEventListener('click', playEditorPreview);
+  document.getElementById('cancel-edit-btn').addEventListener('click', clearEditorForm);
+
   document.getElementById('export-btn').addEventListener('click', exportJSON);
   document.getElementById('import-btn').addEventListener('click', () => {
     document.getElementById('import-file').click();
@@ -615,16 +623,116 @@ async function playMelody(d) {
 
 // ─── Editor ──────────────────────────────────────────────────────────────────
 
+function getEditorFormData() {
+  const fd = new FormData(document.getElementById('editor-form'));
+  const degsRaw = (fd.get('scale_degrees') || '').split(',').map(x => parseInt(x.trim())).filter(n => !isNaN(n));
+  const dursRaw = (fd.get('durations') || '').split(',').map(x => parseFloat(x.trim())).filter(n => !isNaN(n));
+  return {
+    title: (fd.get('title') || '').trim(),
+    composer: fd.get('composer') || '',
+    key: fd.get('key') || 'C',
+    time_signature: fd.get('time_signature') || '4/4',
+    tempo: parseInt(fd.get('tempo')) || 120,
+    scale_degrees: degsRaw,
+    durations: dursRaw.length ? dursRaw : undefined,
+  };
+}
+
+function updateEditorPreview() {
+  const d = getEditorFormData();
+  const section = document.getElementById('editor-preview');
+  if (!d.scale_degrees.length) { section.classList.add('hidden'); return; }
+  section.classList.remove('hidden');
+  renderMelody(d, document.getElementById('editor-melody'));
+}
+
+async function playEditorPreview() {
+  const d = getEditorFormData();
+  if (!d.scale_degrees.length) return;
+
+  if (!synth) {
+    await Tone.start();
+    synth = new Tone.Synth({
+      oscillator: { type: 'triangle' },
+      envelope: { attack: 0.02, decay: 0.1, sustain: 0.4, release: 0.8 },
+    }).toDestination();
+  }
+
+  const btn = document.getElementById('preview-play-btn');
+  if (btn.classList.contains('playing')) {
+    Tone.Transport.stop();
+    Tone.Transport.cancel();
+    btn.classList.remove('playing');
+    btn.textContent = '▶ Preview';
+    return;
+  }
+
+  // Stop main play button if it was active
+  const mainBtn = document.getElementById('play-btn');
+  mainBtn.classList.remove('playing');
+  mainBtn.textContent = '▶ Play Melody';
+
+  btn.classList.add('playing');
+  btn.textContent = '■ Stop';
+
+  const bpm = d.tempo || 120;
+  const quarterSec = 60 / bpm;
+  let t = Tone.now() + 0.05;
+
+  d.scale_degrees.forEach((deg, i) => {
+    const dur = (d.durations && d.durations[i]) ? d.durations[i] : 1;
+    const midi = degreeToMidi(deg, d.key);
+    const note = midiToToneNote(midi);
+    const durSec = dur * quarterSec;
+    synth.triggerAttackRelease(note, Math.max(0.1, durSec * 0.85), t);
+    t += durSec;
+  });
+
+  setTimeout(() => {
+    btn.classList.remove('playing');
+    btn.textContent = '▶ Preview';
+  }, (t - Tone.now()) * 1000 + 200);
+}
+
+function loadStandardIntoEditor(s) {
+  const form = document.getElementById('editor-form');
+  form.querySelector('[name="title"]').value = s.title;
+  form.querySelector('[name="composer"]').value = s.composer || '';
+  form.querySelector('[name="key"]').value = s.key || '';
+  form.querySelector('[name="time_signature"]').value = s.time_signature || '';
+  form.querySelector('[name="tempo"]').value = s.tempo || 120;
+  form.querySelector('[name="scale_degrees"]').value = s.scale_degrees.join(', ');
+  form.querySelector('[name="durations"]').value = s.durations ? s.durations.join(', ') : '';
+  editingId = s.id;
+  document.getElementById('editor-submit-btn').textContent = 'Update';
+  document.getElementById('cancel-edit-btn').classList.remove('hidden');
+  document.querySelectorAll('.std-item').forEach(el => el.classList.remove('editing'));
+  document.querySelector(`.std-item[data-id="${s.id}"]`)?.classList.add('editing');
+  updateEditorPreview();
+  form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearEditorForm() {
+  document.getElementById('editor-form').reset();
+  editingId = null;
+  document.getElementById('editor-submit-btn').textContent = 'Save';
+  document.getElementById('cancel-edit-btn').classList.add('hidden');
+  document.getElementById('editor-preview').classList.add('hidden');
+  document.querySelectorAll('.std-item').forEach(el => el.classList.remove('editing'));
+}
+
 function onEditorSubmit(e) {
   e.preventDefault();
   const fd = new FormData(e.target);
   const title = fd.get('title').trim();
-  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const newId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   const degsRaw = fd.get('scale_degrees').split(',').map(x => parseInt(x.trim())).filter(n => !isNaN(n));
   const dursRaw = fd.get('durations').split(',').map(x => parseFloat(x.trim())).filter(n => !isNaN(n));
 
+  if (editingId && editingId !== newId) deleteCustomStandard(editingId);
+
   const std = {
-    id,
+    id: newId,
     title,
     composer: fd.get('composer') || '',
     key: fd.get('key') || 'C',
@@ -635,7 +743,7 @@ function onEditorSubmit(e) {
   };
 
   saveCustomStandard(std);
-  e.target.reset();
+  clearEditorForm();
   rebuildApp();
 }
 
@@ -644,12 +752,19 @@ function buildEditorList() {
   list.innerHTML = `<h3>All Standards (${standards.length})</h3>`;
   standards.forEach(s => {
     const div = document.createElement('div');
-    div.className = 'std-item';
+    div.className = 'std-item' + (s.id === editingId ? ' editing' : '');
+    div.dataset.id = s.id;
     div.innerHTML = `<span>${s.title}</span><span style="color:var(--text-muted);font-size:0.75rem">${s.key}</span>`;
+    div.onclick = () => loadStandardIntoEditor(s);
     const del = document.createElement('button');
     del.textContent = '✕';
     del.title = 'Delete (custom only)';
-    del.onclick = (e) => { e.stopPropagation(); deleteCustomStandard(s.id); rebuildApp(); };
+    del.onclick = (e) => {
+      e.stopPropagation();
+      deleteCustomStandard(s.id);
+      if (s.id === editingId) clearEditorForm();
+      rebuildApp();
+    };
     div.appendChild(del);
     list.appendChild(div);
   });

@@ -60,12 +60,17 @@
           <input type="text" name="durations" placeholder="e.g. 1,0.5,0.5,1,2">
         </label>
         <div class="form-actions">
-          <button type="submit">Save</button>
+          <button type="submit" id="editor-submit-btn">Save</button>
+          <button type="button" id="cancel-edit-btn" class="hidden">Cancel</button>
           <button type="button" id="export-btn">Export JSON</button>
           <button type="button" id="import-btn">Import JSON</button>
           <input type="file" id="import-file" accept=".json" style="display:none">
         </div>
       </form>
+      <div id="editor-preview" class="hidden">
+        <div id="editor-melody"></div>
+        <button type="button" id="preview-play-btn">▶ Preview</button>
+      </div>
       <div id="standards-list"></div>
     </div>
   </div>
