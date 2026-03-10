@@ -560,7 +560,7 @@ const KEY_TO_MIDI_ROOT = {
 
 function degreeToMidi(deg, key) {
   // degree N = semitone (N-1) above root, played in mid-register
-  const root = (KEY_TO_MIDI_ROOT[key] || 60) + 12; // C5 range
+  const root = (KEY_TO_MIDI_ROOT[key] || 60); // C4 range
   return root + (deg - 1);
 }
 
