@@ -1,0 +1,1164 @@
+{
+  "standards": [
+    {
+      "id": "all-of-me",
+      "title": "All of Me",
+      "composer": "Gerald Marks & Seymour Simons",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [8, 8, 6, 6, 5, 3, 1, 2, 3, 5, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 2, 0.5, 0.5, 1, 0.5, 0.5, 2]
+    },
+    {
+      "id": "on-green-dolphin-street",
+      "title": "On Green Dolphin Street",
+      "composer": "Bronisław Kaper",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [8, 7, 6, 7, 8, 5, 4, 3, 2, 1, 2, 3, 5],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "all-the-things-you-are",
+      "title": "All the Things You Are",
+      "composer": "Jerome Kern",
+      "key": "Ab",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 7, 6, 5, 4, 3],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "blue-bossa",
+      "title": "Blue Bossa",
+      "composer": "Kenny Dorham",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 130,
+      "scale_degrees": [3, 2, 1, 7, 1, 2, 3, 5, 3, 1],
+      "durations":     [1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 2]
+    },
+    {
+      "id": "black-orpheus",
+      "title": "Black Orpheus (Manhã de Carnaval)",
+      "composer": "Luiz Bonfá",
+      "key": "Am",
+      "time_signature": "3/4",
+      "tempo": 120,
+      "scale_degrees": [3, 4, 5, 1, 2, 3, 4, 3, 2, 1, 7, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 2]
+    },
+    {
+      "id": "lullaby-of-birdland",
+      "title": "Lullaby of Birdland",
+      "composer": "George Shearing",
+      "key": "Em",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [3, 2, 1, 2, 3, 6, 5, 3, 2, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "autumn-leaves",
+      "title": "Autumn Leaves",
+      "composer": "Joseph Kosma",
+      "key": "Gm",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [6, 2, 5, 1, 4, 7, 3, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 2, 1, 0.5, 0.5, 1, 1, 2]
+    },
+    {
+      "id": "summertime",
+      "title": "Summertime",
+      "composer": "George Gershwin",
+      "key": "Am",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 3, 5, 6, 5, 3, 1, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2, 0.5, 0.5, 2]
+    },
+    {
+      "id": "take-the-a-train",
+      "title": "Take the A Train",
+      "composer": "Billy Strayhorn",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 5, 6, 5, 4, 2, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 2]
+    },
+    {
+      "id": "misty",
+      "title": "Misty",
+      "composer": "Erroll Garner",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [3, 2, 1, 2, 3, 4, 5, 3, 2, 1, 7, 1, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 2]
+    },
+    {
+      "id": "fly-me-to-the-moon",
+      "title": "Fly Me to the Moon",
+      "composer": "Bart Howard",
+      "key": "Am",
+      "time_signature": "3/4",
+      "tempo": 130,
+      "scale_degrees": [6, 7, 1, 2, 1, 6, 4, 5, 6, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 2, 0.5, 0.5, 2, 0.5, 0.5, 2, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "so-what",
+      "title": "So What",
+      "composer": "Miles Davis",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 136,
+      "scale_degrees": [1, 4, 1, 4, 1, 4, 5, 4, 1],
+      "durations":     [1, 1, 1, 1, 0.5, 0.5, 1, 0.5, 2]
+    },
+    {
+      "id": "girl-from-ipanema",
+      "title": "The Girl from Ipanema",
+      "composer": "Antônio Carlos Jobim",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 130,
+      "scale_degrees": [1, 2, 3, 2, 1, 2, 1, 7, 6, 5, 6, 7, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "stella-by-starlight",
+      "title": "Stella by Starlight",
+      "composer": "Victor Young",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 100,
+      "scale_degrees": [6, 5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "my-funny-valentine",
+      "title": "My Funny Valentine",
+      "composer": "Richard Rodgers",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "round-midnight",
+      "title": "Round Midnight",
+      "composer": "Thelonious Monk",
+      "key": "Ebm",
+      "time_signature": "4/4",
+      "tempo": 60,
+      "scale_degrees": [5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 2]
+    },
+    {
+      "id": "have-you-met-miss-jones",
+      "title": "Have You Met Miss Jones",
+      "composer": "Richard Rodgers",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 5, 5, 5, 5, 3, 4, 5, 6, 7, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "there-will-never-be-another-you",
+      "title": "There Will Never Be Another You",
+      "composer": "Harry Warren",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 5, 5, 3, 2, 1, 2, 3, 5, 6, 5, 4, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "how-high-the-moon",
+      "title": "How High the Moon",
+      "composer": "Morgan Lewis",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [3, 3, 3, 4, 5, 5, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "solar",
+      "title": "Solar",
+      "composer": "Miles Davis",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 3, 4, 2, 3, 1, 2, 7, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "beautiful-love",
+      "title": "Beautiful Love",
+      "composer": "Victor Young",
+      "key": "Dm",
+      "time_signature": "3/4",
+      "tempo": 140,
+      "scale_degrees": [1, 3, 5, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "body-and-soul",
+      "title": "Body and Soul",
+      "composer": "Johnny Green",
+      "key": "Db",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 5, 7, 6, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 2]
+    },
+    {
+      "id": "cherokee",
+      "title": "Cherokee",
+      "composer": "Ray Noble",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 260,
+      "scale_degrees": [5, 5, 5, 5, 5, 4, 3, 2, 1, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 2]
+    },
+    {
+      "id": "confirmation",
+      "title": "Confirmation",
+      "composer": "Charlie Parker",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "donna-lee",
+      "title": "Donna Lee",
+      "composer": "Charlie Parker",
+      "key": "Ab",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 5, 3, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "anthropology",
+      "title": "Anthropology",
+      "composer": "Charlie Parker & Dizzy Gillespie",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 300,
+      "scale_degrees": [3, 3, 3, 4, 5, 5, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "billie-s-bounce",
+      "title": "Billie's Bounce",
+      "composer": "Charlie Parker",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 5, 5, 5, 3, 5, 5, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "ornithology",
+      "title": "Ornithology",
+      "composer": "Charlie Parker",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [3, 3, 3, 4, 5, 5, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "night-in-tunisia",
+      "title": "A Night in Tunisia",
+      "composer": "Dizzy Gillespie",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "giant-steps",
+      "title": "Giant Steps",
+      "composer": "John Coltrane",
+      "key": "B",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [3, 2, 1, 5, 4, 3, 7, 6, 5, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "impressions",
+      "title": "Impressions",
+      "composer": "John Coltrane",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [1, 4, 1, 4, 1, 4, 5, 4, 1],
+      "durations":     [1, 1, 1, 1, 0.5, 0.5, 1, 0.5, 2]
+    },
+    {
+      "id": "naima",
+      "title": "Naima",
+      "composer": "John Coltrane",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 54,
+      "scale_degrees": [5, 5, 5, 4, 3, 2, 1, 2, 3],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "blue-in-green",
+      "title": "Blue in Green",
+      "composer": "Miles Davis / Bill Evans",
+      "key": "Gm",
+      "time_signature": "3/4",
+      "tempo": 54,
+      "scale_degrees": [5, 4, 3, 2, 1, 6, 7, 1],
+      "durations":     [1, 1, 1, 1, 2, 1, 1, 3]
+    },
+    {
+      "id": "freddie-freeloader",
+      "title": "Freddie Freeloader",
+      "composer": "Miles Davis",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 144,
+      "scale_degrees": [5, 5, 3, 5, 1, 5, 5, 3, 5, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "all-blues",
+      "title": "All Blues",
+      "composer": "Miles Davis",
+      "key": "G",
+      "time_signature": "6/8",
+      "tempo": 100,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 4, 3],
+      "durations":     [1, 1, 1, 1, 2, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "four",
+      "title": "Four",
+      "composer": "Miles Davis",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [5, 4, 3, 2, 1, 5, 4, 3, 2, 1, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 1]
+    },
+    {
+      "id": "autumn-in-new-york",
+      "title": "Autumn in New York",
+      "composer": "Vernon Duke",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "what-is-this-thing-called-love",
+      "title": "What Is This Thing Called Love",
+      "composer": "Cole Porter",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 3, 1, 7, 6, 7, 1, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "just-friends",
+      "title": "Just Friends",
+      "composer": "John Klenner",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [5, 5, 5, 4, 5, 3, 2, 1, 2, 3, 4, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "there-is-no-greater-love",
+      "title": "There Is No Greater Love",
+      "composer": "Isham Jones",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 5, 5, 5, 5, 3, 4, 5, 6, 7, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "night-and-day",
+      "title": "Night and Day",
+      "composer": "Cole Porter",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 130,
+      "scale_degrees": [7, 7, 7, 7, 7, 7, 6, 5, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "i-got-rhythm",
+      "title": "I Got Rhythm",
+      "composer": "George Gershwin",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [1, 2, 3, 5, 1, 2, 3, 5, 1, 3, 5, 8],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "rhythm-changes",
+      "title": "Rhythm Changes",
+      "composer": "George Gershwin (changes)",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [1, 2, 3, 5, 1, 2, 3, 5, 1, 3, 5, 8],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "star-eyes",
+      "title": "Star Eyes",
+      "composer": "Don Raye & Gene DePaul",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [5, 5, 5, 5, 4, 3, 2, 1, 6, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "like-someone-in-love",
+      "title": "Like Someone in Love",
+      "composer": "Jimmy Van Heusen",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [3, 4, 5, 6, 5, 4, 3, 2, 1, 2, 3, 5, 4],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "alone-together",
+      "title": "Alone Together",
+      "composer": "Arthur Schwartz",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 90,
+      "scale_degrees": [8, 6, 5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2],
+      "durations":     [1, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "the-days-of-wine-and-roses",
+      "title": "Days of Wine and Roses",
+      "composer": "Henry Mancini",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 90,
+      "scale_degrees": [1, 3, 4, 5, 6, 5, 4, 3, 2, 1, 2, 3, 5],
+      "durations":     [1, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "moonlight-in-vermont",
+      "title": "Moonlight in Vermont",
+      "composer": "Karl Suessdorf",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [3, 4, 3, 2, 1, 3, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "out-of-nowhere",
+      "title": "Out of Nowhere",
+      "composer": "Johnny Green",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [3, 2, 1, 2, 3, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "in-a-sentimental-mood",
+      "title": "In a Sentimental Mood",
+      "composer": "Duke Ellington",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 60,
+      "scale_degrees": [5, 5, 5, 6, 5, 4, 3, 2, 1, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "caravan",
+      "title": "Caravan",
+      "composer": "Duke Ellington & Juan Tizol",
+      "key": "C#m",
+      "time_signature": "4/4",
+      "tempo": 140,
+      "scale_degrees": [1, 1, 1, 2, 1, 7, 1, 1, 1, 2, 1, 7, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "sophisticated-lady",
+      "title": "Sophisticated Lady",
+      "composer": "Duke Ellington",
+      "key": "Ab",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "satin-doll",
+      "title": "Satin Doll",
+      "composer": "Duke Ellington",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [2, 3, 2, 3, 2, 3, 5, 2, 3, 2, 3, 2, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "take-five",
+      "title": "Take Five",
+      "composer": "Paul Desmond",
+      "key": "Ebm",
+      "time_signature": "5/4",
+      "tempo": 160,
+      "scale_degrees": [5, 4, 3, 5, 4, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "what-a-wonderful-world",
+      "title": "What a Wonderful World",
+      "composer": "Bob Thiele & George David Weiss",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 66,
+      "scale_degrees": [3, 4, 5, 3, 4, 5, 3, 1, 3, 5, 6, 5, 4],
+      "durations":     [0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "speak-low",
+      "title": "Speak Low",
+      "composer": "Kurt Weill",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [5, 4, 3, 2, 1, 3, 5, 1, 2, 3, 4, 5, 6],
+      "durations":     [1, 1, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "jordu",
+      "title": "Jordu",
+      "composer": "Duke Jordan",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 4, 3, 4, 5, 3, 1, 5, 4, 3, 4, 5, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1]
+    },
+    {
+      "id": "doxy",
+      "title": "Doxy",
+      "composer": "Sonny Rollins",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 130,
+      "scale_degrees": [5, 5, 5, 3, 5, 5, 5, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "st-thomas",
+      "title": "St. Thomas",
+      "composer": "Sonny Rollins",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 190,
+      "scale_degrees": [5, 5, 6, 5, 3, 5, 5, 6, 5, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "airegin",
+      "title": "Airegin",
+      "composer": "Sonny Rollins",
+      "key": "Fm",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [8, 6, 5, 4, 3, 2, 1, 2, 3, 5, 6, 8],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "blue-monk",
+      "title": "Blue Monk",
+      "composer": "Thelonious Monk",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [5, 4, 3, 4, 5, 5, 5, 4, 3, 4, 5, 5, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1]
+    },
+    {
+      "id": "straight-no-chaser",
+      "title": "Straight, No Chaser",
+      "composer": "Thelonious Monk",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [5, 4, 3, 4, 5, 4, 3, 4, 5, 4, 3, 4, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "well-you-neednt",
+      "title": "Well You Needn't",
+      "composer": "Thelonious Monk",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5, 4, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "ruby-my-dear",
+      "title": "Ruby, My Dear",
+      "composer": "Thelonious Monk",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 60,
+      "scale_degrees": [5, 5, 4, 3, 2, 1, 5, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "woody-n-you",
+      "title": "Woody 'n' You",
+      "composer": "Dizzy Gillespie",
+      "key": "Ab",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "groovin-high",
+      "title": "Groovin' High",
+      "composer": "Dizzy Gillespie",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 240,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "a-foggy-day",
+      "title": "A Foggy Day",
+      "composer": "George Gershwin",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 4, 5, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "the-man-i-love",
+      "title": "The Man I Love",
+      "composer": "George Gershwin",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 80,
+      "scale_degrees": [3, 3, 3, 3, 3, 2, 1, 3, 3, 3, 3, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "someone-to-watch-over-me",
+      "title": "Someone to Watch Over Me",
+      "composer": "George Gershwin",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 5, 3, 5, 5, 3, 5, 3, 2, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "embraceable-you",
+      "title": "Embraceable You",
+      "composer": "George Gershwin",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 3, 5, 3, 5, 6, 5, 4, 3, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "but-not-for-me",
+      "title": "But Not for Me",
+      "composer": "George Gershwin",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 150,
+      "scale_degrees": [5, 4, 3, 2, 1, 7, 6, 5, 3, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "i-love-you",
+      "title": "I Love You",
+      "composer": "Cole Porter",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 140,
+      "scale_degrees": [5, 6, 5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "i-concentrate-on-you",
+      "title": "I Concentrate on You",
+      "composer": "Cole Porter",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 80,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 3, 5, 6, 8],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2]
+    },
+    {
+      "id": "just-one-of-those-things",
+      "title": "Just One of Those Things",
+      "composer": "Cole Porter",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 5, 5, 6, 5, 4, 3, 5, 5, 5, 6, 5, 4],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "yesterdays",
+      "title": "Yesterdays",
+      "composer": "Jerome Kern",
+      "key": "Dm",
+      "time_signature": "3/4",
+      "tempo": 100,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 3, 5, 6, 8],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 3]
+    },
+    {
+      "id": "the-way-you-look-tonight",
+      "title": "The Way You Look Tonight",
+      "composer": "Jerome Kern",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [5, 5, 5, 5, 5, 4, 3, 2, 1, 5, 5, 4, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "smoke-gets-in-your-eyes",
+      "title": "Smoke Gets in Your Eyes",
+      "composer": "Jerome Kern",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 6, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "the-very-thought-of-you",
+      "title": "The Very Thought of You",
+      "composer": "Ray Noble",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 5, 4, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "stardust",
+      "title": "Stardust",
+      "composer": "Hoagy Carmichael",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 66,
+      "scale_degrees": [6, 5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "georgia-on-my-mind",
+      "title": "Georgia on My Mind",
+      "composer": "Hoagy Carmichael",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 5, 4, 5, 3, 2, 1, 3, 5, 6, 5, 4],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "ive-got-you-under-my-skin",
+      "title": "I've Got You Under My Skin",
+      "composer": "Cole Porter",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [5, 5, 5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "moonlight-becomes-you",
+      "title": "Moonlight Becomes You",
+      "composer": "Jimmy Van Heusen",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 100,
+      "scale_degrees": [5, 5, 5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "here-s-that-rainy-day",
+      "title": "Here's That Rainy Day",
+      "composer": "Jimmy Van Heusen",
+      "key": "G",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 3, 4, 5, 3, 2, 1, 2, 3, 5, 4, 3, 2],
+      "durations":     [1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "the-nearness-of-you",
+      "title": "The Nearness of You",
+      "composer": "Hoagy Carmichael",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "you-dont-know-what-love-is",
+      "title": "You Don't Know What Love Is",
+      "composer": "Gene de Paul",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 60,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 6, 5, 4, 3, 2],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "when-i-fall-in-love",
+      "title": "When I Fall in Love",
+      "composer": "Victor Young",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 66,
+      "scale_degrees": [5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 4, 5, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "over-the-rainbow",
+      "title": "Over the Rainbow",
+      "composer": "Harold Arlen",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [1, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 5, 4],
+      "durations":     [0.5, 0.5, 1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "stormy-weather",
+      "title": "Stormy Weather",
+      "composer": "Harold Arlen",
+      "key": "Ab",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 5, 5, 5, 5, 5, 4, 3, 2, 1, 2, 3, 5],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "september-song",
+      "title": "September Song",
+      "composer": "Kurt Weill",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [3, 2, 1, 3, 2, 1, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "angel-eyes",
+      "title": "Angel Eyes",
+      "composer": "Matt Dennis",
+      "key": "Am",
+      "time_signature": "4/4",
+      "tempo": 80,
+      "scale_degrees": [5, 5, 4, 3, 2, 1, 5, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "afternoon-in-paris",
+      "title": "Afternoon in Paris",
+      "composer": "John Lewis",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 5, 5, 4, 3, 5, 5, 5, 4, 3, 5, 4, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 1]
+    },
+    {
+      "id": "beatrice",
+      "title": "Beatrice",
+      "composer": "Sam Rivers",
+      "key": "F",
+      "time_signature": "3/4",
+      "tempo": 130,
+      "scale_degrees": [3, 2, 1, 5, 6, 5, 4, 3, 2, 1, 2, 3],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "someday-my-prince-will-come",
+      "title": "Someday My Prince Will Come",
+      "composer": "Frank Churchill",
+      "key": "Bb",
+      "time_signature": "3/4",
+      "tempo": 120,
+      "scale_degrees": [5, 3, 4, 5, 3, 4, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "nardis",
+      "title": "Nardis",
+      "composer": "Miles Davis",
+      "key": "Em",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [5, 4, 3, 2, 1, 5, 4, 3, 2, 1, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 2]
+    },
+    {
+      "id": "milestones",
+      "title": "Milestones",
+      "composer": "Miles Davis",
+      "key": "Gm",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 4, 5, 4, 5, 4, 5, 4, 3, 2, 1, 5, 4],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5]
+    },
+    {
+      "id": "woodyn-you",
+      "title": "There's No You",
+      "composer": "Hal Hopper",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 4, 5, 3, 4, 5, 6, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "alice-in-wonderland",
+      "title": "Alice in Wonderland",
+      "composer": "Sammy Fain",
+      "key": "C",
+      "time_signature": "3/4",
+      "tempo": 140,
+      "scale_degrees": [3, 4, 5, 3, 4, 5, 6, 5, 4, 3, 2, 1, 2],
+      "durations":     [0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "waltz-for-debby",
+      "title": "Waltz for Debby",
+      "composer": "Bill Evans",
+      "key": "F",
+      "time_signature": "3/4",
+      "tempo": 120,
+      "scale_degrees": [5, 4, 3, 2, 1, 3, 2, 1, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "peace",
+      "title": "Peace",
+      "composer": "Horace Silver",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 66,
+      "scale_degrees": [5, 4, 3, 2, 1, 3, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 1, 1, 1, 2, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "bluesette",
+      "title": "Bluesette",
+      "composer": "Toots Thielemans",
+      "key": "Bb",
+      "time_signature": "3/4",
+      "tempo": 150,
+      "scale_degrees": [3, 2, 1, 3, 2, 1, 3, 5, 4, 3, 2, 1, 2],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1]
+    },
+    {
+      "id": "wave",
+      "title": "Wave",
+      "composer": "Antônio Carlos Jobim",
+      "key": "D",
+      "time_signature": "4/4",
+      "tempo": 130,
+      "scale_degrees": [5, 5, 5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "corcovado",
+      "title": "Corcovado (Quiet Nights)",
+      "composer": "Antônio Carlos Jobim",
+      "key": "C",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 5, 4, 3],
+      "durations":     [1, 1, 1, 1, 2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "one-note-samba",
+      "title": "One Note Samba",
+      "composer": "Antônio Carlos Jobim",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 160,
+      "scale_degrees": [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "no-more-blues",
+      "title": "No More Blues (Chega de Saudade)",
+      "composer": "Antônio Carlos Jobim",
+      "key": "Dm",
+      "time_signature": "4/4",
+      "tempo": 150,
+      "scale_degrees": [5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "desafinado",
+      "title": "Desafinado",
+      "composer": "Antônio Carlos Jobim",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 120,
+      "scale_degrees": [1, 3, 5, 6, 5, 4, 3, 2, 1, 3, 5, 6, 5],
+      "durations":     [1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "recorda-me",
+      "title": "Recorda Me",
+      "composer": "Joe Henderson",
+      "key": "Am",
+      "time_signature": "4/4",
+      "tempo": 140,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "inner-urge",
+      "title": "Inner Urge",
+      "composer": "Joe Henderson",
+      "key": "Ebm",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [5, 3, 2, 1, 5, 3, 2, 1, 3, 5, 6, 5, 3],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "footprints",
+      "title": "Footprints",
+      "composer": "Wayne Shorter",
+      "key": "Cm",
+      "time_signature": "6/4",
+      "tempo": 120,
+      "scale_degrees": [1, 3, 5, 6, 5, 3, 1, 3, 5, 6, 5, 3, 1],
+      "durations":     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+    },
+    {
+      "id": "infant-eyes",
+      "title": "Infant Eyes",
+      "composer": "Wayne Shorter",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 54,
+      "scale_degrees": [5, 5, 5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    },
+    {
+      "id": "fee-fi-fo-fum",
+      "title": "Fee-Fi-Fo-Fum",
+      "composer": "Wayne Shorter",
+      "key": "Cm",
+      "time_signature": "4/4",
+      "tempo": 200,
+      "scale_degrees": [5, 4, 3, 2, 1, 5, 4, 3, 2, 1, 3, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 1]
+    },
+    {
+      "id": "eighty-one",
+      "title": "Eighty One",
+      "composer": "Ron Carter & Miles Davis",
+      "key": "Bb",
+      "time_signature": "4/4",
+      "tempo": 140,
+      "scale_degrees": [5, 5, 5, 3, 5, 5, 5, 3, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "blues-for-alice",
+      "title": "Blues for Alice",
+      "composer": "Charlie Parker",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 180,
+      "scale_degrees": [8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "joy-spring",
+      "title": "Joy Spring",
+      "composer": "Clifford Brown",
+      "key": "F",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [5, 4, 3, 5, 4, 3, 5, 6, 5, 4, 3, 2, 1],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1]
+    },
+    {
+      "id": "daahoud",
+      "title": "Daahoud",
+      "composer": "Clifford Brown",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 220,
+      "scale_degrees": [5, 4, 3, 2, 1, 5, 4, 3, 2, 1, 3, 5, 6],
+      "durations":     [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 1]
+    },
+    {
+      "id": "moonlight-serenade",
+      "title": "Moonlight Serenade",
+      "composer": "Glenn Miller",
+      "key": "Eb",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [3, 3, 3, 4, 3, 2, 1, 3, 3, 3, 4, 3, 2],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "id": "spring-is-here",
+      "title": "Spring Is Here",
+      "composer": "Richard Rodgers",
+      "key": "Am",
+      "time_signature": "4/4",
+      "tempo": 72,
+      "scale_degrees": [5, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1],
+      "durations":     [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 2]
+    }
+  ]
+}
