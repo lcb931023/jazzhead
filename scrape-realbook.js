@@ -1,14 +1,23 @@
 #!/usr/bin/env node
 // Scrapes MusicXML from https://realbook.site/ and converts to standards.json format.
 // Usage: node scrape-realbook.js [--limit N]
-// Output: scraped-standards.json
+// Output: public/scraped-standards.json (written incrementally; safe to interrupt and resume)
+//
+// TODO before re-running at full scale:
+//   1. Octave: find best root octave so most notes fall in [1–13] naturally,
+//      instead of clamping individual notes up with `while (deg <= 0) deg += 12`.
+//   2. Rests: include rests in the output (e.g. as duration 0 or negative sentinel)
+//      so phrasing is preserved; currently rests are silently skipped.
+//   3. Tied notes: detect <tie type="start/stop"> and sum durations across the tie,
+//      otherwise tied notes appear as two short notes instead of one long one.
 
 import { XMLParser } from 'fast-xml-parser';
-import { writeFileSync, readFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 
 const RATE_MS = 600;
 const MAX_NOTES = 12;
 const BASE_URL = 'https://realbook.site';
+const OUT_FILE = 'public/scraped-standards.json';
 const ARGS = process.argv.slice(2);
 const LIMIT = ARGS.includes('--limit') ? parseInt(ARGS[ARGS.indexOf('--limit') + 1]) : Infinity;
 
@@ -180,11 +189,20 @@ async function main() {
   const songs = LIMIT < Infinity ? allSongs.slice(0, LIMIT) : allSongs;
   console.log(`Found ${allSongs.length} songs, processing ${songs.length}`);
 
-  const results = [];
+  // Load existing results to support resuming
+  const existing = existsSync(OUT_FILE)
+    ? JSON.parse(readFileSync(OUT_FILE, 'utf8')).standards ?? []
+    : [];
+  const done = new Set(existing.map(s => s.id));
+  const results = [...existing];
+  console.log(`Resuming from ${done.size} already scraped`);
+
   let ok = 0, skip = 0;
 
   for (let i = 0; i < songs.length; i++) {
     const { slug, title } = songs[i];
+    if (done.has(slug)) continue; // already scraped
+
     process.stdout.write(`[${i + 1}/${songs.length}] ${title.slice(0, 40).padEnd(40)} `);
 
     try {
@@ -196,7 +214,6 @@ async function main() {
       const parsed = parseMusicXml(xmlText);
       if (!parsed || parsed.notes.length < 3) { console.log('parse failed or too few notes, skipping'); skip++; continue; }
 
-      const rootMidi = KEY_TO_MIDI_ROOT[parsed.key] ?? 60;
       const scale_degrees = parsed.notes.map(n => midiToScaleDegree(n.midi, parsed.key));
       const durations = parsed.notes.map(n => Math.round(n.durationQ * 1000) / 1000);
 
@@ -212,6 +229,9 @@ async function main() {
       });
       console.log(`✓ ${parsed.key} [${scale_degrees.slice(0, 5).join(',')}...]`);
       ok++;
+
+      // Write after every song so progress is never lost
+      writeFileSync(OUT_FILE, JSON.stringify({ standards: results }, null, 2));
     } catch (e) {
       console.log(`error: ${e.message}`);
       skip++;
@@ -220,9 +240,7 @@ async function main() {
     await sleep(RATE_MS);
   }
 
-  const out = { standards: results };
-  writeFileSync('scraped-standards.json', JSON.stringify(out, null, 2));
-  console.log(`\nDone: ${ok} scraped, ${skip} skipped → scraped-standards.json`);
+  console.log(`\nDone: ${ok} new, ${skip} skipped, ${results.length} total → ${OUT_FILE}`);
 }
 
 main().catch(console.error);
