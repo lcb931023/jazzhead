@@ -7,7 +7,7 @@ export function useStandards() {
   const baseRef = useRef<Standard[]>([]);
 
   useEffect(() => {
-    fetch('/standards.json')
+    fetch(`${import.meta.env.BASE_URL}standards.json`)
       .then(r => r.json())
       .then(data => {
         baseRef.current = data.standards;
