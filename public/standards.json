@@ -3,7 +3,7 @@
     {
       "id": "all-of-me",
       "title": "All of Me",
-      "composer": "Gerald Marks & Seymour Simons",
+      "composer": "1931 - Gerald Marks/Seymour Simons",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 120,
@@ -39,7 +39,7 @@
     {
       "id": "on-green-dolphin-street",
       "title": "On Green Dolphin Street",
-      "composer": "Bronisław Kaper",
+      "composer": "Bronisław Kaper / Ned Washington",
       "key": "C",
       "time_signature": "2/2",
       "tempo": 120,
@@ -75,7 +75,7 @@
     {
       "id": "all-the-things-you-are",
       "title": "All the Things You Are",
-      "composer": "Jerome Kern",
+      "composer": "J. Kern",
       "key": "Ab",
       "time_signature": "4/4",
       "tempo": 180,
@@ -111,7 +111,7 @@
     {
       "id": "blue-bossa",
       "title": "Blue Bossa",
-      "composer": "Kenny Dorham",
+      "composer": "K. Dorham",
       "key": "Cm",
       "time_signature": "4/4",
       "tempo": 130,
@@ -195,7 +195,7 @@
         1,
         -2,
         1,
-        "-",
+        0,
         "-",
         -4,
         3,
@@ -219,7 +219,7 @@
     {
       "id": "autumn-leaves",
       "title": "Autumn Leaves",
-      "composer": "Joseph Kosma",
+      "composer": "J. Kosma",
       "key": "Gm",
       "time_signature": "4/4",
       "tempo": 120,
@@ -255,7 +255,7 @@
     {
       "id": "summertime",
       "title": "Summertime",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / DuBose Heyward / Ira Gershwin",
       "key": "Am",
       "time_signature": "4/4",
       "tempo": 72,
@@ -291,7 +291,7 @@
     {
       "id": "take-the-a-train",
       "title": "Take the A Train",
-      "composer": "Billy Strayhorn",
+      "composer": "Billy Strayhorn / Joya Sherrill / Lee Gaines",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 200,
@@ -327,14 +327,14 @@
     {
       "id": "misty",
       "title": "Misty",
-      "composer": "Erroll Garner",
+      "composer": "Erroll Garner / Johnny Burke",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 72,
       "scale_degrees": [
         8,
         5,
-        "-",
+        0,
         -4,
         -2,
         -1,
@@ -363,7 +363,7 @@
     {
       "id": "fly-me-to-the-moon",
       "title": "Fly Me to the Moon",
-      "composer": "Bart Howard",
+      "composer": "B. Howard",
       "key": "Cm",
       "time_signature": "4/4",
       "tempo": 130,
@@ -501,7 +501,7 @@
     {
       "id": "my-funny-valentine",
       "title": "My Funny Valentine",
-      "composer": "Richard Rodgers",
+      "composer": "Richard Rodgers, Lorenz Hart",
       "key": "Gm",
       "time_signature": "4/4",
       "tempo": 72,
@@ -537,7 +537,7 @@
     {
       "id": "round-midnight",
       "title": "Round Midnight",
-      "composer": "Thelonious Monk",
+      "composer": "Thelonius Monk / Bernie Hanighen",
       "key": "Ebm",
       "time_signature": "4/4",
       "tempo": 60,
@@ -573,7 +573,7 @@
     {
       "id": "have-you-met-miss-jones",
       "title": "Have You Met Miss Jones",
-      "composer": "Richard Rodgers",
+      "composer": "Richard Rodgers / Lorenz Hart",
       "key": "F",
       "time_signature": "2/2",
       "tempo": 200,
@@ -609,14 +609,14 @@
     {
       "id": "there-will-never-be-another-you",
       "title": "There Will Never Be Another You",
-      "composer": "Harry Warren",
+      "composer": "Harry Warren / Mack Gordon",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 160,
       "scale_degrees": [
         -4,
         -2,
-        "-",
+        0,
         1,
         3,
         5,
@@ -645,7 +645,7 @@
     {
       "id": "how-high-the-moon",
       "title": "How High the Moon",
-      "composer": "Morgan Lewis",
+      "composer": "W. M. Lewis",
       "key": "G",
       "time_signature": "4/4",
       "tempo": 200,
@@ -711,7 +711,7 @@
     {
       "id": "beautiful-love",
       "title": "Beautiful Love",
-      "composer": "Victor Young",
+      "composer": "V. Young",
       "key": "Dm",
       "time_signature": "4/4",
       "tempo": 140,
@@ -747,7 +747,7 @@
     {
       "id": "body-and-soul",
       "title": "Body and Soul",
-      "composer": "Johnny Green",
+      "composer": "J. Green",
       "key": "Db",
       "time_signature": "4/4",
       "tempo": 72,
@@ -830,7 +830,7 @@
         5,
         6,
         5,
-        "-",
+        0,
         1,
         2,
         3,
@@ -855,7 +855,7 @@
     {
       "id": "donna-lee",
       "title": "Donna Lee",
-      "composer": "Charlie Parker",
+      "composer": "C. Parker",
       "key": "Ab",
       "time_signature": "4/4",
       "tempo": 240,
@@ -891,7 +891,7 @@
     {
       "id": "anthropology",
       "title": "Anthropology",
-      "composer": "Charlie Parker & Dizzy Gillespie",
+      "composer": "Charlie Parker / Dizzy Gillespie",
       "key": "Bb",
       "time_signature": "4/4",
       "tempo": 300,
@@ -963,7 +963,7 @@
     {
       "id": "ornithology",
       "title": "Ornithology",
-      "composer": "Charlie Parker",
+      "composer": "Charlie Parker / Benny Harris",
       "key": "G",
       "time_signature": "4/4",
       "tempo": 220,
@@ -1143,7 +1143,7 @@
     {
       "id": "blue-in-green",
       "title": "Blue in Green",
-      "composer": "Miles Davis / Bill Evans",
+      "composer": "Miles Davis",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 54,
@@ -1156,7 +1156,7 @@
         3,
         1,
         10,
-        "-",
+        0,
         -2,
         -3,
         -2
@@ -1353,7 +1353,7 @@
     {
       "id": "just-friends",
       "title": "Just Friends",
-      "composer": "John Klenner",
+      "composer": "John Klenner / Sam M. Lewis",
       "key": "G",
       "time_signature": "4/4",
       "tempo": 180,
@@ -1389,7 +1389,7 @@
     {
       "id": "there-is-no-greater-love",
       "title": "There Is No Greater Love",
-      "composer": "Isham Jones",
+      "composer": "Isham Jones / Marty Symes",
       "key": "Bb",
       "time_signature": "4/4",
       "tempo": 160,
@@ -1461,7 +1461,7 @@
     {
       "id": "i-got-rhythm",
       "title": "I Got Rhythm",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin",
       "key": "Bb",
       "time_signature": "4/4",
       "tempo": 220,
@@ -1571,7 +1571,7 @@
     {
       "id": "like-someone-in-love",
       "title": "Like Someone in Love",
-      "composer": "Jimmy Van Heusen",
+      "composer": "Jimmy Van Heusen / Johnny Burke",
       "key": "C",
       "time_signature": "2/2",
       "tempo": 120,
@@ -1607,7 +1607,7 @@
     {
       "id": "alone-together",
       "title": "Alone Together",
-      "composer": "Arthur Schwartz",
+      "composer": "Arthur Schwartz / Howard Dietz",
       "key": "Dm",
       "time_signature": "4/4",
       "tempo": 90,
@@ -1643,7 +1643,7 @@
     {
       "id": "the-days-of-wine-and-roses",
       "title": "Days of Wine and Roses",
-      "composer": "Henry Mancini",
+      "composer": "H. Mancini",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 90,
@@ -1679,7 +1679,7 @@
     {
       "id": "moonlight-in-vermont",
       "title": "Moonlight in Vermont",
-      "composer": "Karl Suessdorf",
+      "composer": "John Blackburn / Karl Suessdorf",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 72,
@@ -1715,7 +1715,7 @@
     {
       "id": "out-of-nowhere",
       "title": "Out of Nowhere",
-      "composer": "Johnny Green",
+      "composer": "Johnny Green / Edward Heyman",
       "key": "G",
       "time_signature": "4/4",
       "tempo": 160,
@@ -1751,7 +1751,7 @@
     {
       "id": "in-a-sentimental-mood",
       "title": "In a Sentimental Mood",
-      "composer": "Duke Ellington",
+      "composer": "Duke Ellington, Irvin Mills, Manny Kurtz",
       "key": "Em",
       "time_signature": "4/4",
       "tempo": 60,
@@ -1787,7 +1787,7 @@
     {
       "id": "caravan",
       "title": "Caravan",
-      "composer": "Duke Ellington & Juan Tizol",
+      "composer": "J. Tizol,\n D. Ellington",
       "key": "Fm",
       "time_signature": "4/4",
       "tempo": 140,
@@ -1823,7 +1823,7 @@
     {
       "id": "sophisticated-lady",
       "title": "Sophisticated Lady",
-      "composer": "Duke Ellington",
+      "composer": "Duke Ellington / Irving Mills / Mitchell Parish",
       "key": "Fm",
       "time_signature": "4/4",
       "tempo": 72,
@@ -1859,7 +1859,7 @@
     {
       "id": "satin-doll",
       "title": "Satin Doll",
-      "composer": "Duke Ellington",
+      "composer": "Duke Ellington / Billy Strayhorn /Johnny Mercer",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 120,
@@ -1931,13 +1931,13 @@
     {
       "id": "what-a-wonderful-world",
       "title": "What a Wonderful World",
-      "composer": "Bob Thiele & George David Weiss",
+      "composer": "George David Weiss",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 66,
       "scale_degrees": [
         -4,
-        "-",
+        0,
         1,
         5,
         8,
@@ -1967,7 +1967,7 @@
     {
       "id": "speak-low",
       "title": "Speak Low",
-      "composer": "Kurt Weill",
+      "composer": "Kurt Weill / Ogden Nash",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 120,
@@ -2041,7 +2041,7 @@
     {
       "id": "doxy",
       "title": "Doxy",
-      "composer": "Sonny Rollins",
+      "composer": "S. Rollins",
       "key": "Bb",
       "time_signature": "4/4",
       "tempo": 130,
@@ -2259,7 +2259,7 @@
     {
       "id": "ruby-my-dear",
       "title": "Ruby, My Dear",
-      "composer": "Thelonious Monk",
+      "composer": "Thelonius Monk",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 60,
@@ -2267,7 +2267,7 @@
         "-",
         8,
         6,
-        "-",
+        0,
         -1,
         "-",
         10,
@@ -2367,7 +2367,7 @@
     {
       "id": "a-foggy-day",
       "title": "A Foggy Day",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 120,
@@ -2403,7 +2403,7 @@
     {
       "id": "the-man-i-love",
       "title": "The Man I Love",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 80,
@@ -2439,7 +2439,7 @@
     {
       "id": "someone-to-watch-over-me",
       "title": "Someone to Watch Over Me",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin / Howard Dietz",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 72,
@@ -2475,7 +2475,7 @@
     {
       "id": "embraceable-you",
       "title": "Embraceable You",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin",
       "key": "G",
       "time_signature": "2/2",
       "tempo": 72,
@@ -2511,7 +2511,7 @@
     {
       "id": "but-not-for-me",
       "title": "But Not for Me",
-      "composer": "George Gershwin",
+      "composer": "George Gershwin / Ira Gershwin",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 150,
@@ -2693,7 +2693,7 @@
     {
       "id": "the-way-you-look-tonight",
       "title": "The Way You Look Tonight",
-      "composer": "Jerome Kern",
+      "composer": "Jerome Kern\nDorothy Fields",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 120,
@@ -2839,7 +2839,7 @@
     {
       "id": "georgia-on-my-mind",
       "title": "Georgia on My Mind",
-      "composer": "Hoagy Carmichael",
+      "composer": "H. Carlmichael",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 72,
@@ -2949,7 +2949,7 @@
     {
       "id": "here-s-that-rainy-day",
       "title": "Here's That Rainy Day",
-      "composer": "Jimmy Van Heusen",
+      "composer": "Van Heusen",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 72,
@@ -2985,7 +2985,7 @@
     {
       "id": "the-nearness-of-you",
       "title": "The Nearness of You",
-      "composer": "Hoagy Carmichael",
+      "composer": "N. Washington / H. Carmichael",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 72,
@@ -3021,7 +3021,7 @@
     {
       "id": "you-dont-know-what-love-is",
       "title": "You Don't Know What Love Is",
-      "composer": "Gene de Paul",
+      "composer": "Gene de Paul / Don Raye",
       "key": "Fm",
       "time_signature": "4/4",
       "tempo": 60,
@@ -3129,7 +3129,7 @@
     {
       "id": "stormy-weather",
       "title": "Stormy Weather",
-      "composer": "Harold Arlen",
+      "composer": "Harold Arlen / Ted Koehler",
       "key": "G",
       "time_signature": "4/4",
       "tempo": 72,
@@ -3165,7 +3165,7 @@
     {
       "id": "september-song",
       "title": "September Song",
-      "composer": "Kurt Weill",
+      "composer": "Kurt Weill / Maxwell Anderson",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 72,
@@ -3201,7 +3201,7 @@
     {
       "id": "angel-eyes",
       "title": "Angel Eyes",
-      "composer": "Matt Dennis",
+      "composer": "Matt Dennis / Earl Brent",
       "key": "Cm",
       "time_signature": "4/4",
       "tempo": 80,
@@ -3247,7 +3247,7 @@
         "-",
         3,
         1,
-        "-",
+        0,
         1,
         3,
         5,
@@ -3309,7 +3309,7 @@
     {
       "id": "someday-my-prince-will-come",
       "title": "Someday My Prince Will Come",
-      "composer": "Frank Churchill",
+      "composer": "Frank Churchill / Larry Morey",
       "key": "Bb",
       "time_signature": "3/4",
       "tempo": 120,
@@ -3567,7 +3567,7 @@
     {
       "id": "bluesette",
       "title": "Bluesette",
-      "composer": "Toots Thielemans",
+      "composer": "T. Thielemans",
       "key": "Bb",
       "time_signature": "3/4",
       "tempo": 150,
@@ -3603,7 +3603,7 @@
     {
       "id": "wave",
       "title": "Wave",
-      "composer": "Antônio Carlos Jobim",
+      "composer": "Antonio Carlos Jobim",
       "key": "D",
       "time_signature": "4/4",
       "tempo": 130,
@@ -3639,7 +3639,7 @@
     {
       "id": "corcovado",
       "title": "Corcovado (Quiet Nights)",
-      "composer": "Antônio Carlos Jobim",
+      "composer": "A. C. Jobim",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 72,
@@ -3675,7 +3675,7 @@
     {
       "id": "one-note-samba",
       "title": "One Note Samba",
-      "composer": "Antônio Carlos Jobim",
+      "composer": "A. C. Jobim",
       "key": "C",
       "time_signature": "4/4",
       "tempo": 160,
@@ -3711,7 +3711,7 @@
     {
       "id": "no-more-blues",
       "title": "No More Blues (Chega de Saudade)",
-      "composer": "Antônio Carlos Jobim",
+      "composer": "Antonio Carlos Jobim / Jon Hendricks / Jessie Cavanaugh / Vinicius DeMoraes",
       "key": "Dm",
       "time_signature": "4/4",
       "tempo": 150,
@@ -3747,7 +3747,7 @@
     {
       "id": "desafinado",
       "title": "Desafinado",
-      "composer": "Antônio Carlos Jobim",
+      "composer": "A. C. Jobim",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 120,
@@ -3900,13 +3900,13 @@
       "scale_degrees": [
         -2,
         3,
-        "-",
+        0,
         3,
         5,
         6,
         5,
         3,
-        "-",
+        0,
         -2,
         -4,
         8
@@ -4003,7 +4003,7 @@
     {
       "id": "blues-for-alice",
       "title": "Blues for Alice",
-      "composer": "Charlie Parker",
+      "composer": "Charlie  Parker",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 180,
@@ -4039,7 +4039,7 @@
     {
       "id": "joy-spring",
       "title": "Joy Spring",
-      "composer": "Clifford Brown",
+      "composer": "Clifford Brown / Jon Hendricks",
       "key": "F",
       "time_signature": "4/4",
       "tempo": 220,
@@ -4082,7 +4082,7 @@
       "scale_degrees": [
         "-",
         3,
-        "-",
+        0,
         1,
         4,
         8,
@@ -4111,7 +4111,7 @@
     {
       "id": "moonlight-serenade",
       "title": "Moonlight Serenade",
-      "composer": "Glenn Miller",
+      "composer": "Glenn Miller / Mitchell Parish",
       "key": "Eb",
       "time_signature": "4/4",
       "tempo": 72,
