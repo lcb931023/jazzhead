@@ -35,7 +35,7 @@ const ARGS = process.argv.slice(2);
 const LIMIT = ARGS.includes('--limit') ? parseInt(ARGS[ARGS.indexOf('--limit') + 1]) : Infinity;
 const SCRAPE_ALL = ARGS.includes('--all');
 
-const normalizeTitle = t => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const normalizeTitle = t => t.toLowerCase().replace(/\([^)]*\)/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -401,6 +401,16 @@ async function main() {
     );
     songs = allSongs.filter(s => wanted.has(normalizeTitle(s.title)));
     console.log(`Matched ${songs.length}/${wanted.size} standards.json titles against ${allSongs.length} site songs`);
+
+    // Priority songs get scraped first, in case the run is interrupted/limited.
+    const PRIORITY = ['autumn leaves', 'no more blues', 'chega de saudade', 'blue bossa', 'take the a train'].map(normalizeTitle);
+    songs.sort((a, b) => {
+      const pa = PRIORITY.indexOf(normalizeTitle(a.title));
+      const pb = PRIORITY.indexOf(normalizeTitle(b.title));
+      const ra = pa === -1 ? Infinity : pa;
+      const rb = pb === -1 ? Infinity : pb;
+      return ra - rb;
+    });
   }
   songs = LIMIT < Infinity ? songs.slice(0, LIMIT) : songs;
   console.log(`Found ${allSongs.length} songs, processing ${songs.length}`);
