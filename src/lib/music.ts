@@ -6,11 +6,17 @@ export function degreeColor(deg: number): string {
   return `hsl(${hue}, 70%, 60%)`;
 }
 
+// Compares two melodies' *actual notes* (rests filtered out independently from
+// each side) and returns how many leading notes they share. Rests don't count
+// as compared slots and can't break a match: A = [1, 2, '-', 3] and
+// B = [1, 2, 3] both reduce to the note sequence [1, 2, 3], so this returns 3.
 export function sharedPrefixLength(a: Standard, b: Standard): number {
+  const aNotes = a.scale_degrees.filter((d): d is number => d !== '-');
+  const bNotes = b.scale_degrees.filter((d): d is number => d !== '-');
   let n = 0;
-  const len = Math.min(a.scale_degrees.length, b.scale_degrees.length);
+  const len = Math.min(aNotes.length, bNotes.length);
   for (let i = 0; i < len; i++) {
-    if (a.scale_degrees[i] === b.scale_degrees[i]) n++;
+    if (aNotes[i] === bNotes[i]) n++;
     else break;
   }
   return n;

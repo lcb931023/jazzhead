@@ -45,7 +45,9 @@ export function DetailPanel({ standard, allEdges, allStandards, playingId, onPla
             {connections.map(({ id, shared }) => {
               const s = allStandards.find(x => x.id === id);
               if (!s) return null;
-              const degreeDots = s.scale_degrees.slice(0, shared)
+              const degreeDots = s.scale_degrees
+                .filter((deg): deg is number => deg !== '-')
+                .slice(0, shared)
                 .map(deg => DEGREE_NAMES[deg] ?? deg).join(', ');
               return (
                 <div

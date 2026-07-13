@@ -33,15 +33,20 @@ export function MelodyDisplay({ standard, W = 272, H = 60 }: Props) {
           </g>
         );
       })}
-      {degs.slice(0, -1).map((deg, i) => (
-        <line
-          key={i}
-          x1={x0 + i * spacing} y1={yOf(deg)}
-          x2={x0 + (i + 1) * spacing} y2={yOf(degs[i + 1])}
-          stroke={degreeColor(deg)} strokeWidth={1.5} opacity={0.4}
-        />
-      ))}
+      {degs.slice(0, -1).map((deg, i) => {
+        const nextDeg = degs[i + 1];
+        if (deg === '-' || nextDeg === '-') return null; // don't draw a line through a rest
+        return (
+          <line
+            key={i}
+            x1={x0 + i * spacing} y1={yOf(deg)}
+            x2={x0 + (i + 1) * spacing} y2={yOf(nextDeg)}
+            stroke={degreeColor(deg)} strokeWidth={1.5} opacity={0.4}
+          />
+        );
+      })}
       {degs.map((deg, i) => {
+        if (deg === '-') return null; // rests get no dot, but keep their x-slot for timing
         const x = x0 + i * spacing;
         const y = yOf(deg);
         return (

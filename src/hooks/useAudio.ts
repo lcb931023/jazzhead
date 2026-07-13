@@ -39,8 +39,10 @@ export function useAudio() {
 
     standard.scale_degrees.forEach((deg, i) => {
       const dur = standard.durations?.[i] ?? 1;
-      const note = midiToToneNote(degreeToMidi(deg, standard.key));
-      synthRef.current!.triggerAttackRelease(note, Math.max(0.1, dur * quarterSec * 0.85), t);
+      if (deg !== '-') {
+        const note = midiToToneNote(degreeToMidi(deg, standard.key));
+        synthRef.current!.triggerAttackRelease(note, Math.max(0.1, dur * quarterSec * 0.85), t);
+      }
       t += dur * quarterSec;
     });
 

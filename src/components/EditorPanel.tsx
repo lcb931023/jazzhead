@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import type { Standard } from '../types';
+import type { ScaleDegree, Standard } from '../types';
 import { exportCustom, importCustom } from '../lib/storage';
 import { MelodyDisplay } from './MelodyDisplay';
 
@@ -32,7 +32,11 @@ function toFormState(s: Standard): FormState {
 function parseStandard(form: FormState): Standard | null {
   const title = form.title.trim();
   if (!title) return null;
-  const scale_degrees = form.scale_degrees.split(',').map(x => parseInt(x.trim())).filter(n => !isNaN(n));
+  const scale_degrees: ScaleDegree[] = form.scale_degrees.split(',')
+    .map(x => x.trim())
+    .filter(x => x.length > 0)
+    .map((x): ScaleDegree | null => x === '-' ? '-' : (isNaN(parseInt(x)) ? null : parseInt(x)))
+    .filter((x): x is ScaleDegree => x !== null);
   if (scale_degrees.length === 0) return null;
   const durations = form.durations.split(',').map(x => parseFloat(x.trim())).filter(n => !isNaN(n));
   return {
@@ -153,7 +157,7 @@ export function EditorPanel({ standards, onSave, onDelete, onReload, playingId, 
         <label>
           Scale Degrees (comma-separated)
           <input type="text" placeholder="e.g. 8,7,6,5,4,3,2,1" required {...inputProps('scale_degrees')} />
-          <small>Semitone-based: 1=Root, 2=♭2, 3=2nd, 4=♭3, 5=3rd, 6=4th, 7=♭5, 8=5th, 9=♭6, 10=6th, 11=♭7, 12=7th, 13=Oct</small>
+          <small>Semitone-based: 1=Root, 2=♭2, 3=2nd, 4=♭3, 5=3rd, 6=4th, 7=♭5, 8=5th, 9=♭6, 10=6th, 11=♭7, 12=7th, 13=Oct; - = rest</small>
         </label>
         <label>
           Note Durations (comma-separated, optional)

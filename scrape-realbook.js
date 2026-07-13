@@ -19,7 +19,7 @@
 //      we compute one whole-song octave shift (a multiple of 12) that maximizes how many
 //      of the song's notes land naturally in the 1-13 range, then apply that single shift
 //      to every note in the song.
-//   2. Rests: represented explicitly as scale_degree = 0 (a rest sentinel) with their
+//   2. Rests: represented explicitly as scale_degree = "-" (a rest sentinel) with their
 //      real duration, instead of being silently dropped.
 //   3. Tied notes: tie start/stop pairs (which may span a barline) have their durations
 //      summed into one note instead of being emitted as two short notes.
@@ -438,7 +438,7 @@ async function main() {
 
       const pitchedRaw = parsed.notes.filter(n => !n.rest).map(n => rawScaleDegree(n.midi, parsed.key));
       const shift = bestOctaveShift(pitchedRaw);
-      const scale_degrees = parsed.notes.map(n => n.rest ? 0 : rawScaleDegree(n.midi, parsed.key) + shift);
+      const scale_degrees = parsed.notes.map(n => n.rest ? '-' : rawScaleDegree(n.midi, parsed.key) + shift);
       const durations = parsed.notes.map(n => Math.round(n.durationQ * 1000) / 1000);
 
       results.push({

@@ -1,3 +1,7 @@
+// A melodic scale degree, or '-' for a rest (a non-numeric sentinel so rests
+// can never be mistaken for a real note during arithmetic/comparisons).
+export type ScaleDegree = number | '-';
+
 export interface Standard {
   id: string;
   title: string;
@@ -5,7 +9,7 @@ export interface Standard {
   key: string;
   time_signature: string;
   tempo: number;
-  scale_degrees: number[];
+  scale_degrees: ScaleDegree[];
   durations?: number[];
 }
 

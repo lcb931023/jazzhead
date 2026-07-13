@@ -128,10 +128,11 @@ export function GraphView({ standards, allEdges, depth, showLabels, selectedId, 
         .attr('width', stripW + 8).attr('height', MELODY_H + 8)
         .attr('fill', 'transparent');
 
-      // Dots and connector lines
+      // Dots and connector lines (rests get no dot and no line through them, but keep their x-slot)
       for (let i = 0; i < noteCount; i++) {
         const deg = degs[i];
         const cx = cx0 + i * dotSpacing;
+        if (deg === '-') continue;
         const cy = -mapDegreeToY(deg, MELODY_H);
         melodyG.append('circle')
           .attr('class', `melody-dot note-${i}`)
@@ -139,6 +140,7 @@ export function GraphView({ standards, allEdges, depth, showLabels, selectedId, 
           .attr('r', 2.5).attr('fill', degreeColor(deg)).attr('opacity', 0.6);
         if (i < noteCount - 1) {
           const nextDeg = degs[i + 1];
+          if (nextDeg === '-') continue;
           melodyG.append('line')
             .attr('class', `note-line-${i}`)
             .attr('x1', cx).attr('y1', cy)
