@@ -9,19 +9,29 @@ export function useAudio() {
   const [playingId, setPlayingId] = useState<string | null>(null);
 
   async function playMelody(standard: Standard, callerId: string) {
-    // Stop anything currently playing
+    // Stop anything currently playing.
+    // NOTE: triggerAttackRelease(note, dur, time) schedules envelope automation
+    // directly on the Web Audio clock, NOT via Tone.Transport. Transport.stop()/
+    // cancel() therefore has no effect on already-queued notes from the previous
+    // melody. To actually silence them we must release + dispose the previous
+    // synth instance (which wipes any pending scheduled automation on it) and
+    // start the new melody on a fresh synth.
     if (timerRef.current) clearTimeout(timerRef.current);
     Tone.getTransport().stop();
     Tone.getTransport().cancel();
     setPlayingId(null);
 
-    if (synthRef.current === null) {
-      await Tone.start();
-      synthRef.current = new Tone.Synth({
-        oscillator: { type: 'triangle' },
-        envelope: { attack: 0.02, decay: 0.1, sustain: 0.4, release: 0.8 },
-      }).toDestination();
+    if (synthRef.current !== null) {
+      synthRef.current.triggerRelease();
+      synthRef.current.dispose();
+      synthRef.current = null;
     }
+
+    await Tone.start();
+    synthRef.current = new Tone.Synth({
+      oscillator: { type: 'triangle' },
+      envelope: { attack: 0.02, decay: 0.1, sustain: 0.4, release: 0.8 },
+    }).toDestination();
 
     const bpm = standard.tempo || 120;
     const quarterSec = 60 / bpm;
@@ -42,6 +52,11 @@ export function useAudio() {
     if (timerRef.current) clearTimeout(timerRef.current);
     Tone.getTransport().stop();
     Tone.getTransport().cancel();
+    if (synthRef.current !== null) {
+      synthRef.current.triggerRelease();
+      synthRef.current.dispose();
+      synthRef.current = null;
+    }
     setPlayingId(null);
   }
 
