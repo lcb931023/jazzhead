@@ -36,6 +36,9 @@ export function DetailPanel({ standard, allEdges, allStandards, playingId, onPla
       <div id="detail-melody">
         <MelodyDisplay standard={standard} />
       </div>
+      <button id="play-btn" className={isPlaying ? 'playing' : ''} onClick={handlePlay}>
+        {isPlaying ? '■ Stop' : '▶ Play Melody'}
+      </button>
       <div id="detail-connections">
         {connections.length === 0 ? (
           <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>No shared starting notes found.</p>
@@ -64,9 +67,6 @@ export function DetailPanel({ standard, allEdges, allStandards, playingId, onPla
           </>
         )}
       </div>
-      <button id="play-btn" className={isPlaying ? 'playing' : ''} onClick={handlePlay}>
-        {isPlaying ? '■ Stop' : '▶ Play Melody'}
-      </button>
     </div>
   );
 }
